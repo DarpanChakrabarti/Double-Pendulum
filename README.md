@@ -32,3 +32,16 @@ A computational and visual study of deterministic chaos in the classical double 
 - Earthquake forcing and response modeling
 
 ---
+## ▶️ Getting Started
+
+### 🔧 Requirements
+
+- Recommended Python version: 3.8+
+- `numpy`
+- `matplotlib`
+- `scipy`
+
+Install dependencies using:
+
+```bash
+pip install
