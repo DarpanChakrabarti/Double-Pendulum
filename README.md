@@ -7,47 +7,20 @@ Simulating and visualizing chaotic dynamics of the double pendulum using Python.
 A computational and visual study of deterministic chaos in the classical double pendulum. This repository implements Lagrangian mechanics, simulates phase-space dynamics, explores damping and earthquake effects, and offers animations using open-source Python tools.
 
 ---
+| File/Folder                  | Description |
+|-----------------------------|-------------|
+| `Animating Double Pendulum.py`    | Animates the Double Pendulum (Figure 2) |
+| `Angular Divergence.py` | Chaotic behavior of Angular coordinates (Figure 3) |
+| `Phase Space Analysis.py`               | Analysis of the Phase space (Figure 4) |
+| `Damped Double Pendulum.py`                       | Animates Damped Double Pendulum (Figure 5) |
+| `Energy.py`                    | Energy dissipation (Figure 6) |
+| `Phase Space Collapse.py`                    | Phase space goes into spiral collapse (Figure 7) |
+| `Earthquake.py`                           |Simulates the effect of earthquake on the pendulum (Figure 8)|
+| `README.md`                              | Project overview and instructions. |
 
-## 📁 Repository Structure
-```bash
-├── README.md                          # Project overview
-├── LICENSE                            # License file (MIT or similar)
-├── requirements.txt                   # Python dependencies
-├── .gitignore                         # Ignored files
-├── data/
-│   └── sample_output/                 # Optional visual/plot output
-├── docs/
-│   └── Deterministic_Chaos_in_the_Double_Pendulum.pdf  # Full PDF report
-├── src/                               # Python source code
-│   ├── main_simulation.py             # Core simulation
-│   ├── animate_double_pendulum.py     # Animation
-│   ├── phase_space_analysis.py        # Phase portraits
-│   ├── damping_effects.py             # Damping and energy decay
-│   └── earthquake_forcing.py          # Earthquake simulation
-├── notebooks/
-│   └── double_pendulum_analysis.ipynb # Jupyter notebook walkthrough
-└── examples/
-    └── sample_initial_conditions.json # Sample inputs
-```
 
----
 
 ## 🚀 Getting Started
-
-### 🛠 Installation
-Clone the repository and install dependencies:
-```bash
-git clone https://github.com/yourusername/double-pendulum-chaos.git
-cd double-pendulum-chaos
-pip install -r requirements.txt
-```
-
-### ▶️ Run a Simulation
-```bash
-python src/main_simulation.py
-```
-
----
 
 ## 📷 Features
 - Lagrangian formulation of the double pendulum
