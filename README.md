@@ -15,7 +15,7 @@ A computational and visual study of deterministic chaos in the classical double 
 | `Damped Double Pendulum.py`                       | Animates Damped Double Pendulum (Figure 5) |
 | `Energy.py`                    | Energy dissipation (Figure 6) |
 | `Phase Space Collapse.py`                    | Phase space goes into spiral collapse (Figure 7) |
-| `Earthquake.py`                           |Simulates the effect of earthquake on the pendulum (Figure 8)|
+| `Earthquake.py`                           |Simulates the effect of an earthquake on the pendulum (Figure 8)|
 | `README.md`                              | Project overview and instructions. |
 
 
