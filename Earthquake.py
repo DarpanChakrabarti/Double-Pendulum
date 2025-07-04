@@ -9,7 +9,7 @@ t_max = 30 # Time parameters
 dt = 0.05
 t_eval = np.arange(0, t_max, dt)
 
-earthquake_amplitude = 5.0  # (A) m/s² Earth quack parameters
+earthquake_amplitude = 5.0  # (A) m/s² Earth quake parameters
 earthquake_frequency = 1.0  # f (Hz)
 
 def earthquake_acceleration(t): # 
