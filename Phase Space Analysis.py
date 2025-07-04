@@ -33,8 +33,6 @@ y0_2 = [np.pi / 2 + 0.01, 0, np.pi / 2, 0]
 sol1 = solve_ivp(deriv, [0, t_max], y0_1, t_eval=t_eval, rtol=1e-10, atol=1e-10) # Solve ODEs
 sol2 = solve_ivp(deriv, [0, t_max], y0_2, t_eval=t_eval, rtol=1e-10, atol=1e-10)
 
-# SAME
-
 # Extract θ and ω
 theta1_1, omega1_1 = sol1.y[0], sol1.y[1]
 theta2_1, omega2_1 = sol1.y[2], sol1.y[3]
