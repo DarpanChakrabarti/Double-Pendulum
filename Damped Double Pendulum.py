@@ -34,8 +34,6 @@ y0_2 = [np.pi / 2 + 0.01, 0, np.pi / 2, 0]
 sol1 = solve_ivp(deriv, [0, t_max], y0_1, t_eval=t_eval, rtol=1e-10, atol=1e-10) # Solve ODEs
 sol2 = solve_ivp(deriv, [0, t_max], y0_2, t_eval=t_eval, rtol=1e-10, atol=1e-10)
 
-# SAME
-
 def get_xy(sol): # Convert angles to (x, y)
     theta1, theta2 = sol.y[0], sol.y[2]
     x1 = L1 * np.sin(theta1)
