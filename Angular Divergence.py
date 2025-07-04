@@ -47,11 +47,11 @@ plt.ylabel("Angular Displacement (rad)")
 plt.title("Angle vs Time")
 plt.legend()
 
-plt.subplot(2, 1, 2) # Plot difference t2 - t1 for both
+plt.subplot(2, 1, 2) # Plot difference theta2 - theta1 for both
 d1 = t2_1 - t1_1
 d2 = t2_2 - t1_2
-plt.plot(t, d1, label='$\Delta$ = t2 - t1 (original)')
-plt.plot(t, d2, label='$\Delta$ = t2 - t1 (perturbed)', linestyle='--')
+plt.plot(t, d1, label='$\Delta$ = $\\theta_2 - \\theta_1$ (original)')
+plt.plot(t, d2, label='$\Delta$ = $\\theta_2 - \\theta_1$ (perturbed)', linestyle='--')
 plt.xlabel("Time (s)")
 plt.ylabel("$\Delta$ (rad)")
 plt.legend()
