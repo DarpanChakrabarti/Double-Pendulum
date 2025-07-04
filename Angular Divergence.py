@@ -33,8 +33,6 @@ y0_2 = [np.pi / 2 + 0.01, 0, np.pi / 2, 0]
 sol1 = solve_ivp(deriv, [0, t_max], y0_1, t_eval=t_eval, rtol=1e-10, atol=1e-10) # Solve ODEs
 sol2 = solve_ivp(deriv, [0, t_max], y0_2, t_eval=t_eval, rtol=1e-10, atol=1e-10)
 
-# SAME
-
 t = sol1.t # Extract solutions
 t1_1, t2_1 = sol1.y[0], sol1.y[2]
 t1_2, t2_2 = sol2.y[0], sol2.y[2]
