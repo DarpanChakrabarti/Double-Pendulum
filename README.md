@@ -11,11 +11,12 @@ A computational and visual study of deterministic chaos in the classical double 
 |-----------------------------|-------------|
 | `Animating Double Pendulum.py`    | Animates the Double Pendulum (Figure 2) |
 | `Angular Divergence.py` | Chaotic behavior of Angular coordinates (Figure 3) |
-| `Phase Space Analysis.py`               | Analysis of the Phase space (Figure 4) |
-| `Damped Double Pendulum.py`                       | Animates Damped Double Pendulum (Figure 5) |
+| `Lyapunov Exponent_without damping.py`    | Calculates the Lyapunov exponent (Figure 4)|
+| `Phase Space Analysis.py`               | Analysis of the Phase space (Figure 5) |
+| `Damped Double Pendulum.py`                       | Animates Damped Double Pendulum (Figure 6) |
 | `Energy.py`                    | Energy dissipation (Figure 6) |
-| `Phase Space Collapse.py`                    | Phase space goes into spiral collapse (Figure 7) |
-| `Earthquake.py`                           |Simulates the effect of an earthquake on the pendulum (Figure 8)|
+| `Phase Space Collapse.py`                    | Phase space goes into spiral collapse (Figure 8) |
+| `Earthquake.py`                           |Simulates the effect of an earthquake on the pendulum (Figure 9)|
 | `README.md`                              | Project overview and instructions. |
 
 
