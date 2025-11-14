@@ -5,25 +5,25 @@ from scipy.integrate import solve_ivp
 g = 9.81
 L1 = L2 = 1.0
 m1 = m2 = 1.0
+b1 = b2 = 0
 
 def deriv(t, y):
     theta1, omega1, theta2, omega2 = y
     delta = theta1 - theta2
-
-    M11 = (m1 + m2) * L1
+    M11 = (m1 + m2) * L1  # Mass matrix
     M12 = m2 * L2 * np.cos(delta)
     M21 = L1 * np.cos(delta)
     M22 = L2
 
-    RHS1 = -m2 * L2 * omega2**2 * np.sin(delta) - (m1 + m2) * g * np.sin(theta1)
-    RHS2 = L1 * omega1**2 * np.sin(delta) - g * np.sin(theta2)
-
+    # Right-hand side (forcing terms)
+    RHS1 = -m2 * L2 * omega2**2 * np.sin(delta) - (m1 + m2) * g * np.sin(theta1) - b1*omega1
+    RHS2 = L1 * omega1**2 * np.sin(delta) - g * np.sin(theta2) - b2*omega2
     M = np.array([[M11, M12], [M21, M22]])
     RHS = np.array([RHS1, RHS2])
+    accel = np.linalg.solve(M, RHS)  # Solve the 2x2 linear system
 
-    domega1, domega2 = np.linalg.solve(M, RHS)
-
-    return [omega1, domega1, omega2, domega2]
+    domega1, domega2 = accel
+    return omega1, domega1, omega2, domega2
 
 def lyapunov_exponent_with_graph(y0, delta0, dt, T):
 
