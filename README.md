@@ -17,6 +17,8 @@ A computational and visual study of deterministic chaos in the classical double 
 | `Energy.py`                    | Energy dissipation (Figure 7) |
 | `Phase Space Collapse.py`                    | Phase space goes into spiral collapse (Figure 8) |
 | `Earthquake.py`                           |Simulates the effect of an earthquake on the pendulum (Figure 9)|
+| `Dynamical Drag Coefficient.py`     |Simulates the double pendulum with user-varied drag coefficient (b)|
+| `Dynamical Earthquack parameters.py`   |Simulates the double pendlum under seismic excitation with user-varied amplitude (A) and frequency (f)|
 | `README.md`                              | Project overview and instructions. |
 
 
@@ -29,6 +31,7 @@ A computational and visual study of deterministic chaos in the classical double 
 - Animations via `matplotlib.animation`
 - Sensitive dependence on initial conditions
 - Phase space analysis: θ–ω diagrams
+- Calculating and analysing Lyapunov exponents
 - Damping simulation and energy decay visualization
 - Earthquake forcing and response modeling
 
